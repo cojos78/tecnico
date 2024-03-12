@@ -60,6 +60,22 @@
 
                 a.closes {
                     border: 2px solid #fff;
+                    
+                }
+                .closes{
+                    border-radius: 20px;
+                    background-color: #022b3a;
+                    border: 2px solid #fff;
+                    color: white;
+                    width: 164px;
+                    height: 43px;
+                    cursor: pointer
+                }
+                .closes:hover{
+                    box-shadow: 5px 5px 5px black;
+                    transform: scale(1.2);
+                    transition: 1s;
+                    
                 }
             }
         }
@@ -67,6 +83,7 @@
             top: 0;
             opacity: 1;
         }
+
 
     </style>
 </head>

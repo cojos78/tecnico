@@ -31,7 +31,7 @@
         <h5>{{ Auth::user()->role }}</h5>
         <form action="{{ route('logout') }}" method="post">
             <button class="closes">Log Out</button>
-            
+            @csrf
         </form>
     </nav>
 </div>
