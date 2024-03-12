@@ -20,13 +20,13 @@ class User extends Authenticatable
     protected $fillable = [
         'document',
         'fullname',
+        'gender',
+        'birthdate',
         'photo',
         'phone',
         'email',
         'password',
-        'role',
-        'birthday',
-        'gender'
+        'role'
     ];
 
     /**
@@ -46,5 +46,11 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+        //'password' => 'hashed',
     ];
+
+    // RelationShip
+    public function adoptions() {
+        return $this->hasMany('App\Models\Adoption');
+    }
 }
