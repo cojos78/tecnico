@@ -479,5 +479,23 @@ main {
         color: #fff;
     }
     
+    table{
+        tfoot {
+            color: #fff9;
+            nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                div:first-of-type{
+                    border: 2px solid red;
+                }
+
+                a:is(:link, :visited){
+                    color: #fff9;
+                }
+            }
+        }
+    }
 }
 
